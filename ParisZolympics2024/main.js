@@ -10,6 +10,8 @@ class main extends Phaser.Scene {
 
     create() {
 
+        this.scene.bringToTop("main");
+
         this.add.image(0, 0, 'frontCoverImg').setOrigin(0, 0);
 
         console.log('*** main scene');

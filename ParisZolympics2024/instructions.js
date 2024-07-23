@@ -5,6 +5,8 @@ class instructions extends Phaser.Scene {
   
   create() {
     console.log("*** instructions");
+
+    this.scene.bringToTop("instructions");
   
     // Add image and detect spacebar keypress
     this.add.image(0, 0, 'instructionsImg').setOrigin(0, 0);
